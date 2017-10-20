@@ -6,18 +6,18 @@
 
     <title>Building Your Own Style Sheets</title>
 
-    <link rel="stylesheet" href="/vendor/stylesheets/normalize.css">
-    <link rel="stylesheet" href="/assets/stylesheets/global.css">
-    <link rel="stylesheet" href="/assets/stylesheets/home.css">
-    <link rel="stylesheet" href="/assets/stylesheets/nav.css">
+    <link rel="stylesheet" href="/vendor/stylesheets/normalize.css"> <!-- styling to correct browser view -->
+    <link rel="stylesheet" href="/assets/stylesheets/global.css"> <!-- globally preferred styling classes: container, image response, text alignment, clearfix (solves IE float problems but use display: inline block or flexbox avoid outdated float) -->
+    <link rel="stylesheet" href="/assets/stylesheets/home.css"><!-- styling classes for home page logo/title, styling for a element of id=main-header -->
+    <link rel="stylesheet" href="/assets/stylesheets/nav.css"><!-- styling for elements of id=main-nav -->
 
-    <link rel="stylesheet" href="/assets/stylesheets/basics.css">    
+    <link rel="stylesheet" href="/assets/stylesheets/basics.css"><!-- styling id, class, element for basics.html -->
   </head>
   <body>
     <!-- Nav -->
-    <nav id="main-nav">
-      <ul class="clearfix">
-        <li><a href="/">Home</a></li>
+    <nav id="main-nav"> <!-- Navigation for group of links called main-nav -->
+      <ul class="clearfix"> <!--clear ul's child elements/put stray floats in container -->
+        <li><a href="/">Home</a></li> <!-- start filling the (now) empty unordered list with links -->
         <li><a href="/basics.html">Basics</a></li>
         <li><a href="/box_model.html">Box Model</a></li>
         <li><a href="/positioning.html">Positioning</a></li>
@@ -26,21 +26,14 @@
         <li><a href="/lists.html">Lists</a></li>
         <li><a href="/media.html">Media</a></li>
         <li><a href="/tables.html">Tables</a></li>
-
         <li><a href="/form.html">Form</a></li>
         <li><a href="/post.html">Post</a></li>
       </ul>
     </nav>
 
     <!-- Example -->
-    <p id="greeting">Hello! I'll display darkred and white.</p>
-    <p>I'm going to display darkgreen and white.</p>
-    <p class="big">I'm going to display darkgreen and white. I'll have a bigger font size too!</p>
+    <p id="greeting">Hello! I'll display darkred and white.</p> <!-- style only this p element with id=greeting from basics.css -->
+    <p>I'm going to display darkgreen and white.</p> <!-- p element styled on basics.css to darkgreen -->
+    <p class="big">I'm going to display darkgreen and white. I'll have a bigger font size too!</p> <!-- style text in this p element with .big class from basics.css -->
   </body>
 </html>
-
-
-
-
-
-
