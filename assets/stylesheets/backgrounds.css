@@ -2,20 +2,22 @@
  * Backgrounds
  * ----------------------------------- */
 
+/* class to set height */
 .background-example {
   height: 256px;
 }
 
+/* used to create red background */
 #simple-color-background {
   background: red;
 }
 
-
+/* used to create background with color of 255red, 0green, 0blue, 50% transparency */
 #rgba-background {
   background: rgba(255, 0, 0, 0.5);
 }
 
-
+/* used to create background with image, no image repeat, centered, fixed screen position, size to auto-cover the element, specified height */
 #background-image {
   background-image: url("/assets/images/landscape.jpg");
   background-repeat: no-repeat;
@@ -25,21 +27,16 @@
   height: 1044px;
 }
 
-
+/* used to create background with image that repeats */
 #background-image-with-repeat {
   background-image: url("/assets/images/tile.jpg");
 }
 
-
+/* used to create gradient background (this color to that color) */
 #background-gradient {
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); /*Safari 5.1-6*/
+  background: -webkit-linear-gradient(left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); /*Chrome and Safari 5.1-6*/
   background: -o-linear-gradient(right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); /*Fx 3.6-15*/
+  background: -moz-linear-gradient(right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); /*Firefox 3.6-15*/
   background: linear-gradient(to right,  rgba(255, 0, 0, 0),  rgba(255, 0, 0, 1)); /*Standard*/
 }
-
-
-
-
-
