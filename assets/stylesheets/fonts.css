@@ -2,38 +2,52 @@
  * Fonts
  * ----------------------------------- */
 
-
+/* default font for fonts.html is Helvetica with fallback font options */
 html {
   font-family: Helvetica, "Times New Roman", sans-serif;
 }
+
+/* class for Times New Roman font with sans-serif as fallback */
 .times-new-roman {
   font-family: "Times New Roman", sans-serif;
 }
+
+/* make font size bigger */
 .big {
   font-size: 32px;
 }
+
+/* make font size smaller */
 .small {
   font-size: 8px;
 }
+
+/* make font more bold */
 .heavy {
   font-weight: 700;
 }
+
+/* equal spacing between letters: Courier New is a type of monospaced font */
 .monospaced {
   font-family: "Courier New", monospaced;
 }
+
+/* class for cursive font */
 .cursive {
   font-family: cursive;
 }
+
+/* set spacing between letters to 24px */
 .spaced {
   letter-spacing: 24px;
 }
+
+/* increase line height to 128px */
 .big-line-height {
   line-height: 128px;
 }
+
+/* class for Bungee font (google font) with sans-serif as fallback*/
 .bungee {
   font-family: Bungee, sans-serif;
 }
-
-
-
-
