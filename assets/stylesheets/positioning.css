@@ -3,64 +3,87 @@
  * ----------------------------------- */
 
 
-
+/* stack elements left or right*/
 .left {
   float: left;
 }
 .right {
   float: right;
 }
+
+/* can be used to stop floating or used to position a div in the next line (where there are no floats)*/
 .clear {
   clear: both;
 }
 
+/* height of orange header div */
 #main-header {
   height: 128px;
 }
+
+/* height of section containing all divs from main content to sidebar */
 #main-content-container {
   height: 384px;
 }
+
+/* width of green main content section*/
+/* not grouped with sidebar id below due to different width */
 #main-content {
-  width: 67%;
+  width: 67%; /*67% width of screen*/
 }
+
+/*width of blue aside section*/
 #sidebar {
   width: 33%;
 }
+
+/*height of red footer section*/
 #main-footer {
   height: 96px;
 }
+
+/* height of main content and sidebar sections (main and aside id) */
 #main-content,
 #sidebar {
   height: 100%;
 }
 
-
+/* dimensions of a square to be used in positioning.html */
 .square {
   width: 64px;
   height: 64px;
 }
 
+/* the float classes above stack elements left and right while the ones below allow more specific positioning*/
+
+/* parent div with position (inside main content section) depending on text of main content section*/
 #relatively-positioned-parent {
-  position: relative;
-  top: 32px;
+  position: relative; /*parent div is hidden if absolute*/
+  top: 32px; /* excluding the text of main content section since relative positon*/
   left: 32px;
   width: 256px;
   height: 256px;
 }
+
+/* child div with position inside (relatively or abs positioned) parent div as intended*/
 #absolutely-positioned-child {
   position: absolute;
 }
+
+/* child div with position inside parent div depending on absolute child's position */
 #relatively-positioned-child {
   position: relative;
 }
+
+/* like a fly on the screen: div with exact same position regardless of whether you scroll up or down */
 #fixed-position-child {
   position: fixed;
 }
+
+/* all child divs distanced (at least) 32px from left and top 'border' of higher div (parent div for rel and abs child, screen for fixed child) */
 #fixed-position-child,
 #absolutely-positioned-child,
 #relatively-positioned-child {
-  top: 32px;
+  top: 10px;
   left: 32px;
 }
-
-

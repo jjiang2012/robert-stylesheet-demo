@@ -7,6 +7,7 @@ body {
   color: #444;
 }
 
+/*before and after psuedo-selectors used to clear floats (div floating when it shouldn't be)*/
 .clearfix::before,
 .clearfix::after {
   display: table;
@@ -39,9 +40,3 @@ body {
 .text-left {
   text-align: left;
 }
-
-
-
-
-
-

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/stylesheets/nav.css">
     <link rel="stylesheet" href="/assets/stylesheets/colors.css">
 
-    <link rel="stylesheet" href="/assets/stylesheets/positioning.css">
+    <link rel="stylesheet" href="/assets/stylesheets/positioning.css"> <!-- styling classes for floats, clear / id to style heights and widths -->
   </head>
   <body>
     <!-- Nav -->
@@ -34,41 +34,35 @@
 
     <h1>CSS Positioning</h1>
 
-    <h2>Clearing Floats</h2>
+    <h2>Clearing Floats</h2> <!-- By using clearfix class from global.css -->
 
-    <div class="clearfix">
-      <div class="square blue left"></div>
-      <div class="square blue left"></div>
-      <div class="square red clear"></div>
+    <div class="clearfix green">  <!-- Added green to make parent div visible -->
+      <div class="square blue left"></div> <!-- creates blue square top left of parent div -->
+      <div class="square blue right"></div> <!-- changed to right: creates blue square top right of parent div -->
+      <div class="square red right clear"></div> <!-- (Not needed if clearfix class is used) this line stops the blue squares above from floating. Also clear is needed for red square to appear in next line -->
     </div>
 
 
     <h2>Floats in a Layout with Positioning</h2>
 
-    <header id="main-header" class="orange">Header</header>
+    <header id="main-header" class="orange">Header</header> <!-- orange header section saying Header (height defined in positioning.css) -->
 
-    <section id="main-content-container" class="clearfix yellow">
-      <main id="main-content" class="left green">
+    <section id="main-content-container" class="clearfix yellow"> <!-- group all divs below into 1 section -->
+      <main id="main-content" class="left green"> <!-- green main section saying Main content and contains the divs below -->
         Main Content
-        <div id="relatively-positioned-parent" class="orange">
-          <div class="square white">Static</div>
-          <div id="relatively-positioned-child" class="purple square">Rel</div>
-          <div class="square white">Static</div>
-          <div id="absolutely-positioned-child" class="cyan square">Abs</div>
-          <div class="square white">Static</div>
-          <div id="fixed-position-child" class="grey square">Fixed</div>
+        <div id="relatively-positioned-parent" class="orange"> <!-- creates orange parent div with relative-position (adding text to parent div will make the child divs below float) -->
+          <div class="square white">Static</div> <!-- static is default position: creates white square (does not cover whole line) in first line of parent div -->
+          <div id="relatively-positioned-child" class="purple square">Rel</div> <!-- creates purple child div with relative-position and says Rel -->
+          <div class="square white">Static</div> <!-- static is default position: creates white square in 3rd line (relative-position child div above took 2nd line) of parent div -->
+          <div id="absolutely-positioned-child" class="cyan square">Abs</div> <!-- creates cyan child div with absolute-position and says Abs-->
+          <div class="square white">Static</div> <!-- static is default position: creates white square in 4th line of parent div -->
+          <div id="fixed-position-child" class="grey square">Fixed</div> <!-- creates grey child div with fixed-position and says Fixed -->
         </div>
       </main>
-      <aside id="sidebar" class="left blue">Sidebar</aside>
+      <aside id="sidebar" class="left blue">Sidebar</aside> <!-- aside (instead of div since only related to main content) used to create blue sidebar -->
     </section>
 
 
-    <footer id="main-footer" class="red">Footer</footer>
+    <footer id="main-footer" class="red">Footer</footer> <!-- Nav -->
   </body>
 </html>
-
-
-
-
-
-
