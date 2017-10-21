@@ -2,17 +2,19 @@
  * Basics
  * ----------------------------------- */
 
+
+/* id has highest priority for layering*/
 #greeting {
   background: darkred;
 }
+
+/* class has second highest priority for layering*/
 .big {
   font-size: 24px;
 }
+
+/* element has lowest priority for layering */
 p {
   background: darkgreen;
   color: white;
 }
-
-
-
-

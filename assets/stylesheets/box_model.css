@@ -3,26 +3,22 @@
  * ----------------------------------- */
 
 #parent {
-  background: yellow;
+  background: yellow; /* margin */
   overflow: auto;
 }
 
 #child {
-  background: blue;
+  background: blue; /* padding color */
   width: 512px;
   height: 128px;
   padding: 16px;
   margin: 16px;
   border: 8px solid green;
-  outline: 8px solid red;
+  outline: 8px solid red; /*does not affect overall height of box*/
 }
 
 #grandchild {
-  background: orange;
+  background: orange; /* content */
   width: 512px;
   height: 128px;
 }
-
-
-
-

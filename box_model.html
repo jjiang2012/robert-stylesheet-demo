@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/stylesheets/nav.css">
     <link rel="stylesheet" href="/assets/stylesheets/colors.css">
 
-    <link rel="stylesheet" href="/assets/stylesheets/box_model.css">
+    <link rel="stylesheet" href="/assets/stylesheets/box_model.css"> <!-- styling id for parent, child, grandchild -->
   </head>
   <body>
     <!-- Nav -->
@@ -32,15 +32,17 @@
       </ul>
     </nav>
 
-    <h1>CSS Box Model</h1>
+    <h1>CSS Box Model</h1> <!-- How to style a box/rectangle in css -->
 
-    <h2>Color Key</h2>
-    <table>
+    <h2>Color Key</h2> <!-- legend to distinguish the sub-boxes -->
+    <table> <!-- use table to create the legend -->
       <tr>
-        <td>Parent Div:</td><td class="yellow">Yellow</td>
+        <td>Parent Div:</td> <!-- Row1Cell1 say Parent Div: -->
+        <td class="yellow">Yellow</td> <!-- Row1Cell2 say Yellow (in black by default) while making the cell yellow -->
       </tr>
       <tr>
-        <td>Child Div:</td><td class="blue">Blue</td>
+        <td>Child Div:</td> <!-- Row2Cell1 say Child Div: -->
+        <td class="blue">Blue</td> <!-- Row2Cell2 say Blue while making the cell blue -->
       </tr>
       <tr>
         <td>Child Div Border:</td><td class="green">Green</td>
@@ -53,17 +55,11 @@
       </tr>
     </table>
 
-
-    <div id="parent">
+<!-- create sub-boxes for parent/margin, child (box_model.css has different color for its padding, border, and outline), and grandchild/content sections -->
+    <div id="parent"> <!-- (overall box) parent section contains child section, which contains grandchild/content section -->
       <div id="child">
         <div id="grandchild"></div>
       </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
