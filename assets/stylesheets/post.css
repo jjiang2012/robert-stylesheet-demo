@@ -2,67 +2,67 @@
  * Post
  * ----------------------------------- */
 
-
+/* style post header by centering text and creating top/bottom padding */
 .post-header {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-
+/* change text color for post header and first letter of content for post class's p element */
 .post-header,
-.post p::first-letter {
+.post p::first-letter { /* pseudo-selector */
   color: #7A90CF;
 }
 
-
+/* default style for post class */
 .post {
-  column-count: 2;
-  column-gap: 128px;
-  column-rule: 1px solid #444;
-  margin-bottom: 128px;
+  column-count: 2; /* 2 columns */
+  column-gap: 128px; /* gap between the 2 columns */
+  column-rule: 1px solid #444; /* line between the columns */
+  margin-bottom: 128px; /* bottom margin */
 }
+
+/* indent text and change line height for post class's p element */
 .post p {
   text-indent: 2em;
   line-height: 1.5em;
 }
+
+/* change font size and spacing for first letter of each post class's p element */
 .post p::first-letter {
   font-size: 5em;
   letter-spacing: 2px;
 }
 
-
+/* bottom margin for post class's p, img, and blockquote elements */
 .post p,
 .post img,
 .post blockquote {
   margin-bottom: 64px;
 }
 
-
+/* make img always centered in its column regardless of screen size*/
 .post img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
+/* create red left-border and left-padding for blockquote */
 .post blockquote {
   border-left: 4px solid #CF5A6D;
   padding-left: 16px;
 }
 
-
+/* media query: when screen width is less than 769px then style according to below */
 @media screen and (max-width: 768px) {
   .post {
-    column-count: 1;
-    padding-left: 16px;
+    column-count: 1; /* display 1 column on screen instead of 2 */
+    padding-left: 16px; /* change right and left padding size */
     padding-right: 16px;
-    max-width: 512px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 512px; /* change max width to allow (fixed size paddings above to be fully displayed) */
+    margin-left: auto; /* set margins to auto to center the content when screen size changes*/
+    margin-right: auto; /*  */
   }
 }
-
-
-
-
