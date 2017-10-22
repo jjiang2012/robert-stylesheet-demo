@@ -2,30 +2,37 @@
  * Table
  * ----------------------------------- */
 
-
+/* class to make table 100% width of parent/container and close gap between borders */
 .table {
   width: 100%;
   border-collapse: collapse;
 }
+
+/* change size and color of th left and bottom borders */
 .table th {
   border-bottom: 2px solid #85BECF;
   border-left: 1px solid #85BECF;
 }
+
+/* make first th (First Name) have no left border */
 .table th:nth-child(1) {
   border-left-width: 0;
 }
+
+/* create top and bottom padding for th and td (white gap between text and borders) */
 .table th,
 .table td {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+/* indent text for td, change size and color of bottom border for td */
 .table td {
   text-indent: 1em;
   border-bottom: 2px solid #eee;
 }
+
+/* make last tr have no bottom border */
 .table tr:last-child td {
   border-bottom-width: 0;
 }
-
-
-
