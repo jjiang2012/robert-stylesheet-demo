@@ -2,14 +2,14 @@
  * Media
  * ----------------------------------- */
 
+/* centers image inside container */
 .img-container {
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 0 auto; /* centers image (margin on 4 sides of image) and white space (margin) is 0 or changes as necessary */
 }
+
+/* make image always display fully (become smaller when necessary) when screen size changes */
 .img-responsive {
-  width: 100%;
+  width: 100%; /* image's width = 100% of container if screen is small */
   height: auto;
 }
-
-
-
