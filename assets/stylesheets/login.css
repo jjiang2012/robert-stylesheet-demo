@@ -2,47 +2,57 @@
  * Login
  * ----------------------------------- */
 
-
+/* used to create "container" div with max width, centered content, top margin */
 #login-form {
   max-width: 512px;
   margin: 0 auto;
   margin-top: 96px;
 }
 
-
+/* used to give div a bottom margin and width equal parent div */
 .form-group {
   margin-bottom: 1em;
   width: 100%;
 }
+
+/* make form-group tags (label, email input, password input) display as a block */
 .form-group label,
 .form-group input[type="email"],
 .form-group input[type="password"] {
   display: block;
 }
+
+/* make text of label tag bold and have bottom margin */
 .form-group label {
   font-weight: bold;
   margin-bottom: 8px;
 }
+
+/* style size and display of email and password inputs */
 .form-group input[type="email"],
 .form-group input[type="password"] {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 6px;
+  display: block; /* display as a block */
+  box-sizing: border-box; /* specify that padding and border included in div's total width and height */
+  border-radius: 6px; /* rounded corners */
   border: 1px solid #D4D9DC;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-indent: 1em;
-  width: 100%;
+  text-indent: 1em; /* indent text */
+  width: 100%; /* width equal to parent div */
 }
+
+/* border fades in 0.5 seconds when input box is no longer selected (clicked away) */
 .form-group input {
   transition: border 0.5s;
 }
+
+/* border becomes blue when input box is clicked, also no outline */
 .form-group input:focus {
   outline: none;
   border-color: #8299DC;
 }
 
-
+/* style button with padding, rounded corners, blue border, white background when not hovered or clicked, blue text, and clickable */
 .btn {
   padding: 10px;
   border-radius: 6px;
@@ -51,21 +61,21 @@
   cursor: pointer;
   color: #7A90CF;
 }
+
+/* turn text white when button (Login for example) is hovered or clicked */
 .btn:hover,
 .btn:active {
   color: #fff;
 }
+
+/* turn background yellow and border purple when button is hovered */
 .btn:hover {
-  background-color: #8FA7F1;
-  border-color: #8299DC;
+  background-color: #ffff00; /* yellow background */
+  border-color: #FF33DA; /* purple border */
 }
+
+/* turn background green and border red when button is clicked */
 .btn:active {
-  background-color: #89A1E8;
-  border-color: #7A90CF;
+  background-color: #00ff00; /* green background */
+  border-color: #ff0000; /* red border */
 }
-
-
-
-
-
-

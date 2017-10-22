@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="/vendor/stylesheets/normalize.css">
     <link rel="stylesheet" href="/assets/stylesheets/global.css">
-    <link rel="stylesheet" href="/assets/stylesheets/login.css">
+    <link rel="stylesheet" href="/assets/stylesheets/login.css"> <!-- styling class and id -->
     <link rel="stylesheet" href="/assets/stylesheets/nav.css">
   </head>
   <body>
@@ -31,23 +31,24 @@
     </nav>
 
     <!-- Login Form -->
-    <div id="login-form">
-      <h2 class="text-center">Login</h2>
+    <div id="login-form"> <!-- create containing div with max width, centered content, and top margin -->
+      <h2 class="text-center">Login</h2> <!-- Make "Login" text centered with a global.css class -->
 
-      <form action="form.html" method="get">
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" placeholder="user@example.com">
+      <form action="form.html" method="get"> <!-- create a form that accepts inputs? -->
+        <div class="form-group"> <!-- create child div with bottom margin and width equal to parent div -->
+          <label for="email">Email:</label> <!-- say Email and associate this label with email input below -->
+          <input type="email" placeholder="user@example.com"> <!-- specify input type is email (message saying @ is needed when invalid email entered) and say "user@example.com" before selecting -->
         </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" placeholder="Password1234">
+
+        <div class="form-group"> <!-- create child div with bottom margin and width equal to parent div -->
+          <label for="password">Password:</label> <!-- say Password and associate this label with password input below -->
+          <input type="password" placeholder="Password1234"> <!-- specify input type is password (hidden characters) and say "Password1234" before selecting -->
         </div>
-        <div class="form-group">
-          <button class="btn" type="submit">Login</button>
+
+        <div class="form-group"> <!-- create child div with bottom margin and width equal to parent div -->
+          <button class="btn" type="submit">Login</button> <!-- create a submit button with styles from login.css and text saying Login -->
         </div>
       </form>
     </div>
   </body>
 </html>
-
